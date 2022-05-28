@@ -1,0 +1,28 @@
+<!-- Copyright (c) ZeroC, Inc. All rights reserved. -->
+
+<icegrid>
+
+  <application name="Montecarlo">
+
+    <replica-group id="ReplicatedMontecarloAdapters">
+      <load-balancing type="adaptive"/>
+      <object identity="MontecarloFactory" type="::Algorithm::MontecarloFactory"/>
+    </replica-group>
+
+    <server-template id="MontecarloServerTemplate">
+      <parameter name="index"/>
+      <server id="MontecarloServer-${index}" exe="java" activation="on-demand">
+        <option>-jar</option>
+        <option>build/libs/server.jar</option>
+        <adapter name="MontecarloAdapter" endpoints="tcp -h localhost" register-process="true" replica-group="ReplicatedMontecarloAdapters"/>
+        <property name="Identity" value="Montecarlo"/>
+      </server>
+    </server-template>
+
+    <node name="node1">
+      <server-instance template="MontecarloServerTemplate" index="1"/>
+    </node>
+
+  </application>
+
+</icegrid>

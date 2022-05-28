@@ -1,0 +1,22 @@
+<state>
+  <timestamp value='1653758039722' />
+  <sourceSet name='default'>
+    <source name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/Montecarlo.ice'>
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/_Marker.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/Montecarlo.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloPrx.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/_MontecarloPrxI.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactoryPrx.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/_MontecarloFactoryPrxI.java' />
+    </source>
+    <source name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/Hello.ice'>
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Demo/_Marker.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Demo/Hello.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Demo/HelloPrx.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Demo/_HelloPrxI.java' />
+    </source>
+    <arg value='/usr/local/bin/slice2java' />
+    <arg value='-I/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/simple' />
+  </sourceSet>
+</state>

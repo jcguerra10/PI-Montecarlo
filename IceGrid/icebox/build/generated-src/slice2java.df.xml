@@ -1,0 +1,13 @@
+<state>
+  <timestamp value='1653758039721' />
+  <sourceSet name='default'>
+    <source name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/icebox/Hello.ice'>
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/_Marker.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/Hello.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/HelloPrx.java' />
+      <file name='/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/_HelloPrxI.java' />
+    </source>
+    <arg value='/usr/local/bin/slice2java' />
+    <arg value='-I/Users/jcguerra/Documents/AAUniversity/ArquiSoft/ProyectoFinal/Implementacion/java/IceGrid/icebox' />
+  </sourceSet>
+</state>

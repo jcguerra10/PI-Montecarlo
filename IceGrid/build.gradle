@@ -31,6 +31,7 @@ def demoIceGridProject(name) {
             doLast {
                 file('db/registry').mkdirs()
                 file('db/node').mkdirs()
+                file('db/node2').mkdirs()
             }
         }
         compileJava.dependsOn(makeDbDirs)
@@ -45,19 +46,8 @@ def demoIceGridProject(name) {
 }
 
 demoIceGridProject(":demoIceGridSimple")
-demoIceGridProject(":demoIceGridIcebox")
 
 project(":demoIceGridSimple") {
     demoJar("client")
     demoJar("server")
-}
-
-project(":demoIceGridIcebox") {
-    dependencies {
-        runtimeOnly localDependency("icessl")
-        implementation localDependency("icebox")
-    }
-    demoJar("client")
-    demoJar("service")
-    demoIceBoxServer()
 }

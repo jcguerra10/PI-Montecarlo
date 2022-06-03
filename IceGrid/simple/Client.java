@@ -110,9 +110,12 @@ public class Client
 //        while(!line.equals("x"));
 
 
+        ObjectPrx proxy = communicator.stringToProxy("IceGrid/Query");
+        com.zeroc.IceGrid.QueryPrx query = com.zeroc.IceGrid.QueryPrx.checkedCast(proxy);
+        ObjectPrx[] list = query.findAllObjectsByType("::Algorithm::MontecarloFactory");
+
         ObjectPrx obj = communicator.stringToProxy("MontecarloFactory");
         MontecarloFactoryPrx fac = MontecarloFactoryPrx.checkedCast(obj);
-        MontecarloPrx montecarlo  = fac.createMontecarlo();
 
         menu();
 
@@ -126,13 +129,23 @@ public class Client
                 System.out.print("==> ");
                 System.out.flush();
                 line = in.readLine();
+
+                proxy = communicator.stringToProxy("IceGrid/Query");
+                query = com.zeroc.IceGrid.QueryPrx.checkedCast(proxy);
+                list = query.findAllObjectsByType("::Algorithm::MontecarloFactory");
+
+                System.out.println("---");
+                for (int i = 0; i < list.length; i++) {
+                    System.out.println(list[i]);
+                }
+                System.out.println("---");
                 if(line == null)
                 {
                     break;
                 }
                 if(line.equals("s"))
                 {
-                    montecarlo.shutdown();
+                    //montecarlo.shutdown();
                 }
                 else if(line.equals("x"))
                 {
@@ -144,7 +157,7 @@ public class Client
                 }
                 else
                 {
-                    montecarlo.algorithm(Integer.parseInt(line));
+                    fac.doAlgorithm(Integer.parseInt(line));
                 }
             }
             catch(java.io.IOException ex)

@@ -10,5 +10,6 @@ module Algorithm
 
     interface MontecarloFactory {
         Montecarlo* createMontecarlo();
+        int doAlgorithm(int n);
     };
 };

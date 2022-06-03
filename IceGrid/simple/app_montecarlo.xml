@@ -14,13 +14,16 @@
       <server id="MontecarloServer-${index}" exe="java" activation="on-demand">
         <option>-jar</option>
         <option>build/libs/server.jar</option>
-        <adapter name="MontecarloAdapter" endpoints="tcp -h localhost" register-process="true" replica-group="ReplicatedMontecarloAdapters"/>
-        <property name="Identity" value="Montecarlo"/>
+        <adapter name="MontecarloAdapter" endpoints="tcp" register-process="true" replica-group="ReplicatedMontecarloAdapters"/>
       </server>
     </server-template>
 
     <node name="node1">
       <server-instance template="MontecarloServerTemplate" index="1"/>
+    </node>
+
+    <node name="node2">
+      <server-instance template="MontecarloServerTemplate" index="2"/>
     </node>
 
   </application>

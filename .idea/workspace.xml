@@ -4,7 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4a61cc5-84f4-4835-9bcb-15c0d8f1eaf4" name="Changes" comment="" />
+    <list default="true" id="c4a61cc5-84f4-4835-9bcb-15c0d8f1eaf4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat/build/libs/demoChat-3.7.7.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/build/libs/demoChat-3.7.7.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chat/build/tmp/jar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/Chat/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/Hello.ice" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/HelloI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/HelloServiceI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/HelloI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/HelloServiceI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/com/zeroc/demos/IceGrid/icebox/Demo/Hello$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/com/zeroc/demos/IceGrid/icebox/Demo/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/com/zeroc/demos/IceGrid/icebox/Demo/HelloPrx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/com/zeroc/demos/IceGrid/icebox/Demo/_HelloPrxI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/classes/java/main/com/zeroc/demos/IceGrid/icebox/Demo/_Marker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/HelloPrx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/_HelloPrxI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/generated-src/com/zeroc/demos/IceGrid/icebox/Demo/_Marker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/generated-src/slice2java.df.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/libs/client.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/libs/iceboxserver.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/libs/service.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/tmp/IceBoxServerJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/tmp/clientJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/build/tmp/serviceJar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/config.client" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/icebox/config.grid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/Montecarlo.ice" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/Montecarlo.ice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/MontecarloFactoryI.java" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/MontecarloFactoryI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/app_montecarlo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/app_montecarlo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/MontecarloFactoryI.class" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/MontecarloFactoryI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactoryPrx.class" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/classes/java/main/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactoryPrx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactoryPrx.java" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/generated-src/com/zeroc/demos/IceGrid/simple/Algorithm/MontecarloFactoryPrx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/generated-src/slice2java.df.xml" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/generated-src/slice2java.df.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/libs/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/libs/client.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/libs/server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/libs/server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/tmp/clientJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/tmp/clientJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/build/tmp/serverJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/build/tmp/serverJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/db/node/servers/MontecarloServer-1/config/config" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/db/node/servers/MontecarloServer-1/config/config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/db/node/servers/MontecarloServer-1/revision" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/db/node/servers/MontecarloServer-1/revision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/db/registry/data.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/db/registry/data.mdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/db/registry/icedb.lock" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/db/registry/icedb.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IceGrid/simple/db/registry/lock.mdb" beforeDir="false" afterPath="$PROJECT_DIR$/IceGrid/simple/db/registry/lock.mdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +108,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -191,11 +254,24 @@
       <workItem from="1653447031822" duration="1005000" />
       <workItem from="1653615166061" duration="54000" />
       <workItem from="1653754862691" duration="3152000" />
+      <workItem from="1654190710576" duration="6560000" />
+      <workItem from="1654220111711" duration="943000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

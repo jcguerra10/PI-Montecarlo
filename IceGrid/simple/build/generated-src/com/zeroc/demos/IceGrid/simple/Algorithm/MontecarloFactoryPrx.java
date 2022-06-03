@@ -54,6 +54,46 @@ public interface MontecarloFactoryPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
+    default int doAlgorithm(int n)
+    {
+        return doAlgorithm(n, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+    }
+
+    default int doAlgorithm(int n, java.util.Map<String, String> context)
+    {
+        return _iceI_doAlgorithmAsync(n, context, true).waitForResponse();
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.Integer> doAlgorithmAsync(int n)
+    {
+        return _iceI_doAlgorithmAsync(n, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+    }
+
+    default java.util.concurrent.CompletableFuture<java.lang.Integer> doAlgorithmAsync(int n, java.util.Map<String, String> context)
+    {
+        return _iceI_doAlgorithmAsync(n, context, false);
+    }
+
+    /**
+     * @hidden
+     * @param iceP_n -
+     * @param context -
+     * @param sync -
+     * @return -
+     **/
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Integer> _iceI_doAlgorithmAsync(int iceP_n, java.util.Map<String, String> context, boolean sync)
+    {
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.Integer> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "doAlgorithm", null, sync, null);
+        f.invoke(true, context, null, ostr -> {
+                     ostr.writeInt(iceP_n);
+                 }, istr -> {
+                     int ret;
+                     ret = istr.readInt();
+                     return ret;
+                 });
+        return f;
+    }
+
     /**
      * Contacts the remote server to verify that the object implements this type.
      * Raises a local exception if a communication error occurs.

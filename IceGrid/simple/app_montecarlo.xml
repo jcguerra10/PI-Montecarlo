@@ -15,6 +15,7 @@
         <option>-jar</option>
         <option>build/libs/server.jar</option>
         <adapter name="MontecarloAdapter" endpoints="tcp" register-process="true" replica-group="ReplicatedMontecarloAdapters"/>
+        <property name="Identity" value="MontecarloFactory"/>
       </server>
     </server-template>
 

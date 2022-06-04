@@ -39,81 +39,6 @@ public class Client
 
     private static int run(com.zeroc.Ice.Communicator communicator)
     {
-        //
-        // First we try to connect to the object with the `hello'
-        // identity. If it's not registered with the registry, we
-        // search for an object with the ::Demo::Hello type.
-        //
-//        MontecarloPrx montecarlo = null;
-//        try
-//        {
-//            montecarlo = MontecarloPrx.checkedCast(communicator.stringToProxy("Montecarlo"));
-//        }
-//        catch(com.zeroc.Ice.NotRegisteredException ex)
-//        {
-//            com.zeroc.IceGrid.QueryPrx query =
-//                com.zeroc.IceGrid.QueryPrx.checkedCast(communicator.stringToProxy("DemoIceGrid/Query"));
-//            montecarlo = MontecarloPrx.checkedCast(query.findObjectByType("::Algorithm::Montecarlo"));
-//        }
-//        if(montecarlo == null)
-//        {
-//            System.err.println("couldn't find a `::Algorithm::Montecarlo' object");
-//            return 1;
-//        }
-//
-//        menu();
-//
-//        java.io.BufferedReader in = new java.io.BufferedReader(new java.io.InputStreamReader(System.in));
-//
-//        String line = null;
-//        do
-//        {
-//            try
-//            {
-//                System.out.print("==> ");
-//                System.out.flush();
-//                line = in.readLine();
-//                if(line == null)
-//                {
-//                    break;
-//                }
-//                if(line.equals("s"))
-//                {
-//                    montecarlo.shutdown();
-//                }
-//                else if(line.equals("x"))
-//                {
-//                    // Nothing to do
-//                }
-//                else if(line.equals("?"))
-//                {
-//                    menu();
-//                }
-//                else
-//                {
-//                    montecarlo.algorithm(Integer.parseInt(line));
-//                }
-//            }
-//            catch(java.io.IOException ex)
-//            {
-//                ex.printStackTrace();
-//            }
-//            catch(com.zeroc.Ice.LocalException ex)
-//            {
-//                ex.printStackTrace();
-//            }
-//            catch (NumberFormatException ex)
-//            {
-//                System.out.println("No es ni un numero, ni una opcion");
-//            }
-//        }
-//        while(!line.equals("x"));
-
-
-        ObjectPrx proxy = communicator.stringToProxy("IceGrid/Query");
-        com.zeroc.IceGrid.QueryPrx query = com.zeroc.IceGrid.QueryPrx.checkedCast(proxy);
-        ObjectPrx[] list = query.findAllObjectsByType("::Algorithm::MontecarloFactory");
-
         ObjectPrx obj = communicator.stringToProxy("MontecarloFactory");
         MontecarloFactoryPrx fac = MontecarloFactoryPrx.checkedCast(obj);
 
@@ -130,15 +55,10 @@ public class Client
                 System.out.flush();
                 line = in.readLine();
 
-                proxy = communicator.stringToProxy("IceGrid/Query");
-                query = com.zeroc.IceGrid.QueryPrx.checkedCast(proxy);
-                list = query.findAllObjectsByType("::Algorithm::MontecarloFactory");
 
-                System.out.println("---");
-                for (int i = 0; i < list.length; i++) {
-                    System.out.println(list[i]);
-                }
-                System.out.println("---");
+                fac = getProxy(communicator);
+                System.out.println("-- " + fac);
+
                 if(line == null)
                 {
                     break;
@@ -180,6 +100,26 @@ public class Client
         return 0;
     }
 
+    private static MontecarloFactoryPrx getProxy(com.zeroc.Ice.Communicator communicator){
+        System.out.println("getP");
+        MontecarloFactoryPrx hello;
+        try
+        {
+            hello = MontecarloFactoryPrx.checkedCast(communicator.stringToProxy("MontecarloFactory").ice_locatorCacheTimeout(0));
+        }
+        catch(com.zeroc.Ice.NotRegisteredException ex)
+        {
+            com.zeroc.IceGrid.QueryPrx query =
+                    com.zeroc.IceGrid.QueryPrx.checkedCast(communicator.stringToProxy("IceGrid/Query"));
+            hello = MontecarloFactoryPrx.checkedCast(query.findObjectByType("::Algorithm::MontecarloFactory"));
+        }
+        if(hello == null)
+        {
+            System.err.println("couldn't find a `::Algorithm::MontecarloFactory' object");
+            return null;
+        }
+        return hello;
+    }
     private static void menu()
     {
         System.out.println(

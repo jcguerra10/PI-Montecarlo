@@ -1,4 +1,4 @@
-# Configuration file (06/02/22 20:51:07.163)
+# Configuration file (06/03/22 21:41:50.219)
 
 # Server configuration
 Ice.Admin.ServerId=MontecarloServer-1
@@ -8,4 +8,6 @@ Ice.ProgramName=MontecarloServer-1
 MontecarloAdapter.Endpoints=tcp
 MontecarloAdapter.AdapterId=MontecarloServer-1.MontecarloAdapter
 MontecarloAdapter.ReplicaGroupId=ReplicatedMontecarloAdapters
+# Server descriptor properties
+Identity=MontecarloFactory
 Ice.Default.Locator=IceGrid/Locator:default -h localhost -p 4061

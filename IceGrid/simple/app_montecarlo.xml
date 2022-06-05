@@ -5,7 +5,7 @@
   <application name="Montecarlo">
 
     <replica-group id="ReplicatedMontecarloAdapters">
-      <load-balancing type="adaptive"/>
+      <load-balancing type="round-robin"/>
       <object identity="MontecarloFactory" type="::Algorithm::MontecarloFactory"/>
     </replica-group>
 

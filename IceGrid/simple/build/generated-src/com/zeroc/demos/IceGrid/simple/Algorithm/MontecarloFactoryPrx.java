@@ -54,22 +54,22 @@ public interface MontecarloFactoryPrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default int doAlgorithm(int n)
+    default double doAlgorithm(int n)
     {
         return doAlgorithm(n, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default int doAlgorithm(int n, java.util.Map<String, String> context)
+    default double doAlgorithm(int n, java.util.Map<String, String> context)
     {
         return _iceI_doAlgorithmAsync(n, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.Integer> doAlgorithmAsync(int n)
+    default java.util.concurrent.CompletableFuture<java.lang.Double> doAlgorithmAsync(int n)
     {
         return _iceI_doAlgorithmAsync(n, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<java.lang.Integer> doAlgorithmAsync(int n, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<java.lang.Double> doAlgorithmAsync(int n, java.util.Map<String, String> context)
     {
         return _iceI_doAlgorithmAsync(n, context, false);
     }
@@ -81,14 +81,14 @@ public interface MontecarloFactoryPrx extends com.zeroc.Ice.ObjectPrx
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Integer> _iceI_doAlgorithmAsync(int iceP_n, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<java.lang.Double> _iceI_doAlgorithmAsync(int iceP_n, java.util.Map<String, String> context, boolean sync)
     {
-        com.zeroc.IceInternal.OutgoingAsync<java.lang.Integer> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "doAlgorithm", null, sync, null);
+        com.zeroc.IceInternal.OutgoingAsync<java.lang.Double> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "doAlgorithm", null, sync, null);
         f.invoke(true, context, null, ostr -> {
                      ostr.writeInt(iceP_n);
                  }, istr -> {
-                     int ret;
-                     ret = istr.readInt();
+                     double ret;
+                     ret = istr.readDouble();
                      return ret;
                  });
         return f;

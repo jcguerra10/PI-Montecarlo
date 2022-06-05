@@ -19,7 +19,7 @@ public interface MontecarloFactory extends com.zeroc.Ice.Object
 {
     MontecarloPrx createMontecarlo(com.zeroc.Ice.Current current);
 
-    int doAlgorithm(int n, com.zeroc.Ice.Current current);
+    double doAlgorithm(int n, com.zeroc.Ice.Current current);
 
     /** @hidden */
     static final String[] _iceIds =
@@ -77,9 +77,9 @@ public interface MontecarloFactory extends com.zeroc.Ice.Object
         int iceP_n;
         iceP_n = istr.readInt();
         inS.endReadParams();
-        int ret = obj.doAlgorithm(iceP_n, current);
+        double ret = obj.doAlgorithm(iceP_n, current);
         com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
-        ostr.writeInt(ret);
+        ostr.writeDouble(ret);
         inS.endWriteParams(ostr);
         return inS.setResult(ostr);
     }

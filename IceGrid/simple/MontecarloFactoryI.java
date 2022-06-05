@@ -1,6 +1,5 @@
 import com.zeroc.Ice.Current;
 import com.zeroc.Ice.ObjectPrx;
-import com.zeroc.demos.IceGrid.simple.Algorithm.Montecarlo;
 import com.zeroc.demos.IceGrid.simple.Algorithm.MontecarloFactory;
 import com.zeroc.demos.IceGrid.simple.Algorithm.MontecarloPrx;
 
@@ -18,7 +17,7 @@ public class MontecarloFactoryI implements MontecarloFactory {
     }
 
     @Override
-    public int doAlgorithm(int n, Current current) {
+    public double doAlgorithm(int n, Current current) {
         int i = n;
         int hits = 0;
         for (int j = 0; j <= i; j++) {
@@ -38,7 +37,7 @@ public class MontecarloFactoryI implements MontecarloFactory {
         relation *= 4;
         System.out.println("relation: " + relation);
         System.out.println("-------------------");
-        return 0;
+        return relation;
     }
 
     public MontecarloPrx getMontecarloPrx() {

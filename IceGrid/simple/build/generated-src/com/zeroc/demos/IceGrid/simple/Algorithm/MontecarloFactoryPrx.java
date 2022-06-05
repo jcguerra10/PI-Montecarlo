@@ -17,43 +17,6 @@ package com.zeroc.demos.IceGrid.simple.Algorithm;
 
 public interface MontecarloFactoryPrx extends com.zeroc.Ice.ObjectPrx
 {
-    default MontecarloPrx createMontecarlo()
-    {
-        return createMontecarlo(com.zeroc.Ice.ObjectPrx.noExplicitContext);
-    }
-
-    default MontecarloPrx createMontecarlo(java.util.Map<String, String> context)
-    {
-        return _iceI_createMontecarloAsync(context, true).waitForResponse();
-    }
-
-    default java.util.concurrent.CompletableFuture<MontecarloPrx> createMontecarloAsync()
-    {
-        return _iceI_createMontecarloAsync(com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
-    }
-
-    default java.util.concurrent.CompletableFuture<MontecarloPrx> createMontecarloAsync(java.util.Map<String, String> context)
-    {
-        return _iceI_createMontecarloAsync(context, false);
-    }
-
-    /**
-     * @hidden
-     * @param context -
-     * @param sync -
-     * @return -
-     **/
-    default com.zeroc.IceInternal.OutgoingAsync<MontecarloPrx> _iceI_createMontecarloAsync(java.util.Map<String, String> context, boolean sync)
-    {
-        com.zeroc.IceInternal.OutgoingAsync<MontecarloPrx> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "createMontecarlo", null, sync, null);
-        f.invoke(true, context, null, null, istr -> {
-                     MontecarloPrx ret;
-                     ret = MontecarloPrx.uncheckedCast(istr.readProxy());
-                     return ret;
-                 });
-        return f;
-    }
-
     default double doAlgorithm(int n)
     {
         return doAlgorithm(n, com.zeroc.Ice.ObjectPrx.noExplicitContext);

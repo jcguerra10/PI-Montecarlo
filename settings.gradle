@@ -4,7 +4,7 @@
 
 // Map of dir->subdir for each of the demos.
 def demos = [
-    'IceGrid' : ['icebox', 'simple']
+    'IceGrid' : ['simple']
 ]
 
 demos.each {
@@ -23,6 +23,3 @@ demos.each {
         project("${projectName}").projectDir = new File("${dir}/${it}")
     }
 }
-
-include ":demoChat"
-project(":demoChat").projectDir = new File("Chat")

@@ -1,20 +1,7 @@
 import com.zeroc.Ice.Current;
-import com.zeroc.Ice.ObjectPrx;
 import com.zeroc.demos.IceGrid.simple.Algorithm.MontecarloFactory;
-import com.zeroc.demos.IceGrid.simple.Algorithm.MontecarloPrx;
 
 public class MontecarloFactoryI implements MontecarloFactory {
-
-    private MontecarloPrx  montecarloPrx;
-
-    @Override
-    public MontecarloPrx createMontecarlo(Current current) {
-        ObjectPrx prx = current.adapter.addWithUUID(new MontecarloI());
-        String adapterId = current.adapter.getCommunicator().getProperties().
-                getProperty(current.adapter.getName() + ".AdapterId");
-        montecarloPrx = MontecarloPrx.uncheckedCast(prx.ice_adapterId(adapterId));
-        return montecarloPrx;
-    }
 
     @Override
     public double doAlgorithm(int n, Current current) {
@@ -40,11 +27,4 @@ public class MontecarloFactoryI implements MontecarloFactory {
         return relation;
     }
 
-    public MontecarloPrx getMontecarloPrx() {
-        return montecarloPrx;
-    }
-
-    public void setMontecarloPrx(MontecarloPrx montecarloPrx) {
-        this.montecarloPrx = montecarloPrx;
-    }
 }

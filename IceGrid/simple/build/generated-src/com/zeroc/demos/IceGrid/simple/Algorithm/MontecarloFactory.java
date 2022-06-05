@@ -17,8 +17,6 @@ package com.zeroc.demos.IceGrid.simple.Algorithm;
 
 public interface MontecarloFactory extends com.zeroc.Ice.Object
 {
-    MontecarloPrx createMontecarlo(com.zeroc.Ice.Current current);
-
     double doAlgorithm(int n, com.zeroc.Ice.Current current);
 
     /** @hidden */
@@ -52,24 +50,6 @@ public interface MontecarloFactory extends com.zeroc.Ice.Object
      * @param current -
      * @return -
     **/
-    static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_createMontecarlo(MontecarloFactory obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
-    {
-        com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
-        inS.readEmptyParams();
-        MontecarloPrx ret = obj.createMontecarlo(current);
-        com.zeroc.Ice.OutputStream ostr = inS.startWriteParams();
-        ostr.writeProxy(ret);
-        inS.endWriteParams(ostr);
-        return inS.setResult(ostr);
-    }
-
-    /**
-     * @hidden
-     * @param obj -
-     * @param inS -
-     * @param current -
-     * @return -
-    **/
     static java.util.concurrent.CompletionStage<com.zeroc.Ice.OutputStream> _iceD_doAlgorithm(MontecarloFactory obj, final com.zeroc.IceInternal.Incoming inS, com.zeroc.Ice.Current current)
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
@@ -87,7 +67,6 @@ public interface MontecarloFactory extends com.zeroc.Ice.Object
     /** @hidden */
     final static String[] _iceOps =
     {
-        "createMontecarlo",
         "doAlgorithm",
         "ice_id",
         "ice_ids",
@@ -110,25 +89,21 @@ public interface MontecarloFactory extends com.zeroc.Ice.Object
         {
             case 0:
             {
-                return _iceD_createMontecarlo(this, in, current);
+                return _iceD_doAlgorithm(this, in, current);
             }
             case 1:
             {
-                return _iceD_doAlgorithm(this, in, current);
+                return com.zeroc.Ice.Object._iceD_ice_id(this, in, current);
             }
             case 2:
             {
-                return com.zeroc.Ice.Object._iceD_ice_id(this, in, current);
+                return com.zeroc.Ice.Object._iceD_ice_ids(this, in, current);
             }
             case 3:
             {
-                return com.zeroc.Ice.Object._iceD_ice_ids(this, in, current);
-            }
-            case 4:
-            {
                 return com.zeroc.Ice.Object._iceD_ice_isA(this, in, current);
             }
-            case 5:
+            case 4:
             {
                 return com.zeroc.Ice.Object._iceD_ice_ping(this, in, current);
             }

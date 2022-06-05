@@ -4,10 +4,7 @@
 
 import com.zeroc.Ice.Communicator;
 import com.zeroc.Ice.ObjectPrx;
-import com.zeroc.demos.IceGrid.simple.Algorithm.Montecarlo;
 import com.zeroc.demos.IceGrid.simple.Algorithm.MontecarloFactoryPrx;
-import com.zeroc.demos.IceGrid.simple.Algorithm.MontecarloPrx;
-import com.zeroc.demos.IceGrid.simple.Demo.*;
 
 import java.util.List;
 import java.util.concurrent.*;

@@ -1,17 +1,51 @@
 //
-// Copyright (c) ZeroC, Inc. All rights reserved.
+// Install the gradle Ice Builder plug-in from the plug-in portal
 //
-
+plugins {
+    id 'com.zeroc.gradle.ice-builder.slice' version '1.4.7' apply false
+}
+  
 subprojects {
-
-    project.group = "com.zeroc"
+    //
+    // Apply Java and Ice Builder plug-ins to all sub-projects
+    //
     apply plugin: 'java'
-    apply from: "$rootProject.projectDir/gradle/ice.gradle"
+    apply plugin: 'com.zeroc.gradle.ice-builder.slice'
+ 
+    //
+    // Both Client and Server projects share the Printer.ice Slice definitions
+    //
+    slice {
+        java {
+            files = [file("../Montecarlo.ice")]
+        }
+    }
+ 
+    //
+    // Use Ice JAR files from maven central repository
+    //
+    repositories {
+        mavenCentral()
+    }
+ 
+    //
+    // Both Client and Server depend only on Ice JAR
+    //
+    dependencies {
 
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xlint:unchecked" << "-Xlint:-options"
-        options.encoding = "UTF-8"
+        implementation 'com.zeroc:ice:3.7.6'
+        implementation 'com.zeroc:icegrid:3.7.6'
+
+
+    }
+ 
+  
+   jar {
+        manifest {
+            attributes(
+                "Main-Class": project.name.capitalize(),
+                "Class-Path": configurations.runtimeClasspath.resolve().collect { it.toURI() }.join(' ')
+            )
+        }
     }
 }
-
-apply from: "$rootProject.projectDir/IceGrid/build.gradle"
